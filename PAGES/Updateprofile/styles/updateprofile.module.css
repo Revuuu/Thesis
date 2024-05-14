@@ -1,0 +1,38 @@
+.form-group1 {
+  margin-top:150px;
+  justify-content:left;
+  display:block;
+
+  
+}
+
+
+label {
+  font-size: 35px; /* Change the font size to your preferred size */
+  font-family: Arial, sans-serif; /* Change the font family to your preferred font */
+  color:white;
+}
+
+.update-btn {
+  display:flex;
+  margin-left:220px;
+
+}
+
+.add-btn {
+  display: flex;
+  justify-content: flex-end; 
+  margin-top: -400px; 
+  margin-right: 100px; 
+} 
+
+input[type="name"],
+input[type="email"],
+input[type="password"] {
+  width: 50%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}

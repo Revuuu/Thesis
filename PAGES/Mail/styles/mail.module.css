@@ -1,0 +1,97 @@
+.spacing {
+    margin: 0 500px; 
+  }
+  .profile1 {
+    display: flex; 
+    align-items: center;
+  }
+  .profile1 > h1 {
+    color:white;
+    display:flex;
+    margin-left:20px;
+    font-family: Digital, sans-serif;
+  }
+
+  .container {
+    position: relative;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: flex-start; /* Align buttons to the left */
+    position: absolute;
+    left: 0;
+    bottom:-330px;
+    gap:5px;
+  }
+  
+  .alert-btn,
+  .update-btn,
+  .mail-btn {
+    margin-top: -50px;
+    margin-left: 25px;
+  }
+  
+  .alert-btn img,
+  .update-btn img,
+  .mail-btn img {
+    max-width: 100%;
+  }
+  
+  
+  .profilebg {
+    margin-bottom: -200px;
+  }
+
+  
+
+  .profile-picture {
+    /* position:absolute; */
+    margin-top:-150px;
+    margin-left:20px;
+  }
+
+  .client-info {
+    position: relative;
+
+  }
+  
+  .client-name {
+    position: absolute;
+    top: -130px; /* Adjust as needed */
+    left: 250px; /* Adjust as needed */
+    color:white;
+    font-family:Digital, sans-serif;
+    font-size: 50px;
+    word-spacing: 10px;
+  }
+  
+  .star-rating {
+    margin-top: -150px;
+    margin-left: 230px;
+    position: absolute;
+  }
+ 
+
+ 
+  /* .profilebg {
+   margin-bottom:-200px;
+  }
+  .add-btn {
+    display: flex;
+    justify-content: flex-end; 
+    margin-top: -20px; 
+    margin-right: 170px; 
+  } 
+
+  .alert-btn {
+    display:flex;
+    margin-top:-50px;
+    margin-left:25px;
+  }
+
+  .update-btn {
+    display:flex;
+    margin-top:-50px;
+    margin-left:50px;
+  } */

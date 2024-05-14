@@ -1,0 +1,75 @@
+.form-group1 {
+  margin-top:150px;
+  justify-content:left;
+}
+.register-btn {
+  display:flex;
+  margin-left:-10px;
+}
+
+.add-btn {
+  display: flex;
+  justify-content: flex-end; 
+  margin-top: -350px; 
+  margin-right: 100px; 
+} 
+
+input[type="name"],
+input[type="email"],
+input[type="password"] {
+  width: 50%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+label {
+  font-size: 35px; /* Change the font size to your preferred size */
+  font-family: Arial, sans-serif; /* Change the font family to your preferred font */
+  color:white;
+}
+
+/* Button styling */
+.register-btn button {
+  background: linear-gradient(45deg, #ff6b6b, #ff4757);
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: 'Arial', sans-serif;
+  border: none;
+  border-radius: 25px;
+  padding: 12px 24px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.register-btn button:hover {
+  background: linear-gradient(45deg, #ff4757, #ff6b6b);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.register-btn button:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(255, 107, 107, 0.5);
+}
+
+.register-btn button:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+

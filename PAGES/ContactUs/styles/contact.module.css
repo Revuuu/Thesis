@@ -1,0 +1,35 @@
+#incident {
+    color:white;
+    font-family:Digital, sans-serif;
+    font-size:45px;
+    margin-left:20px;
+  }
+  .contact-container {
+    display:flex;
+    }
+textarea#bugreport {
+        resize: none;
+        border-radius: 10px; 
+        border: 1px solid #ccc; 
+        font-family: Arial, sans-serif; 
+        font-size: 14px; 
+        line-height: 2; 
+        margin-left:20px;
+       
+      }
+
+      #proof p {
+        color: white;
+        font-family: Digital, sans-serif;
+        font-size: 45px;
+        line-height: 1;
+        position: relative; 
+        top: -80px; 
+      }
+
+      #proof {
+        align-self: flex-start; 
+        margin-left: 20%; 
+        text-align: right; 
+        
+      }

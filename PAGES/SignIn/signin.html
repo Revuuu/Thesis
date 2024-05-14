@@ -1,0 +1,173 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./styles/signin.module.css">
+<link rel="stylesheet" href="../../CSS/styles.css">
+<title>GACHA</title>
+<script>
+  function showAlert() {
+    // Check if the email and password fields are empty
+    var email = document.getElementById('email').value.trim();
+    var password = document.getElementById('password').value.trim();
+
+    if (email === '' || password === '') {
+      alert('Please enter both email and password.');
+    } else {
+      // Submit the form if fields are not empty
+      document.getElementById('login-form').submit();
+    }
+  }
+
+
+</script>
+
+</head>
+<body>
+  <nav class="row">
+    <div class="left-div">
+      <div class="img-container">
+        <img src="../../ASSETSGACHA/GACHA LOGO-REVISED.png">
+      </div>
+      <p>GACHA</p>
+    </div>
+    <div class="right-div">
+      <div>
+        <a href="../../index.html">Home</a>
+      </div>
+      <div>
+        <a href="../ContactUs/contactus.html">Contact Us</a>
+      </div>
+      <div>
+        <a href="../SignIn/signin.html"><img src="../../ASSETSGACHA/SIGN IN BUTTON-REVISED.png"></a>
+      </div>
+    </div>                        
+  </nav>
+  <div class="container">
+    <form action="login.php" method="POST">
+      <div class="form-group">
+        <div> 
+          <label for="email">Email:</label>
+        </div>
+        
+        <div>
+          <input type="email" id="email" name="email" required placeholder="E.g: JuanDelaCruz123@gmail.com">
+        </div>
+        
+        <div>
+          <label for="password">Password:</label><br>
+        </div>
+
+        <div>
+          <input type="password" id="password" name="password" required>
+        </div>
+
+     
+      </div>
+      <a href="../Updateprofile/updateprofile.html" style="color:black;">Forgot password?</a>
+      <p>Don't have an account? <a href="../Register/register.html">Register</a></p>
+        <br>
+      <div>
+        <button onclick="showAlert()">   
+          <img src="../SignIn/assets/images/START BUTTON REVISED.png">
+        </button>
+      </div>
+       
+    </form>
+  </div>
+</body>
+</html>
+     -->
+
+     <!DOCTYPE html>
+     <html>
+     <head>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="./styles/signin.module.css">
+     <link rel="stylesheet" href="../../CSS/styles.css">
+     <title>GACHA</title>
+     <script>
+       function showAlert(message) {
+         alert(message);
+       }
+     
+       function loginCheck() {
+         var email = document.getElementById('email').value.trim();
+         var password = document.getElementById('password').value.trim();
+     
+         if (email === '' || password === '') {
+           showAlert('Please enter both email and password.');
+         } else {
+           var xhr = new XMLHttpRequest();
+           xhr.open('POST', 'login_check.php', true);
+           xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+           xhr.onreadystatechange = function() {
+             if (xhr.readyState === 4 && xhr.status === 200) {
+               var response = xhr.responseText;
+               if (response === 'success') {
+                 window.location.href = 'index.php';
+               } else {
+                 showAlert('Invalid email or password.');
+               }
+             }
+           };
+           xhr.send('email=' + encodeURIComponent(email) + '&password=' + encodeURIComponent(password));
+         }
+       }
+     </script>
+     </head>
+     <body>
+       <nav class="row">
+         <div class="left-div">
+           <div class="img-container">
+             <img src="../../ASSETSGACHA/GACHA LOGO-REVISED.png">
+           </div>
+           <p>GACHA</p>
+         </div>
+         <div class="right-div">
+           <div>
+             <a href="../../index.html">Home</a>
+           </div>
+           <div>
+             <a href="../ContactUs/contactus.html">Contact Us</a>
+           </div>
+           <div>
+             <a href="../SignIn/signin.html"><img src="../../ASSETSGACHA/SIGN IN BUTTON-REVISED.png"></a>
+           </div>
+         </div>                        
+       </nav>
+       <div class="container">
+         <form id="login-form" onsubmit="event.preventDefault(); loginCheck()">
+           <div class="form-group">
+             <div> 
+               <label for="email">Email:</label>
+             </div>
+             
+             <div>
+               <input type="email" id="email" name="email" required placeholder="E.g: JuanDelaCruz123@gmail.com">
+             </div>
+             
+             <div>
+               <label for="password">Password:</label><br>
+             </div>
+     
+             <div>
+               <input type="password" id="password" name="password" required>
+             </div>
+     
+          
+           </div>
+           <a href="../Updateprofile/updateprofile.html" style="color:black;">Forgot password?</a>
+           <p>Don't have an account? <a href="../Register/register.html">Register</a></p>
+             <br>
+           <div>
+           
+        <a href="../../index.html"><img src="../../ASSETSGACHA/START BUTTON REVISED.png"></a>
+       
+           </div>
+            
+         </form>
+       </div>
+     </body>
+     </html>
+     

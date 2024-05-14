@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../Register/styles/register.module.css">
+<link rel="stylesheet" href="../../CSS/styles.css">
+<style>
+  .register-btn button {
+    background: linear-gradient(45deg, #ff6b6b, #ff4757);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+    border: none;
+    border-radius: 25px;
+    padding: 12px 24px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  .register-btn button:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(255, 107, 107, 0.5);
+  }
+  
+  .register-btn button:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+</style>
+<!-- <script src="submitform.js"></script> -->
+<title>GACHA</title>
+</head>
+<body>
+    <nav class="row">
+      <div class="left-div">
+        <div class="img-container">
+          <img src="../../ASSETSGACHA/GACHA LOGO-REVISED.png">
+        </div>
+        <p>GACHA</p>
+      </div>
+      <div class="right-div">
+        <div>
+          <a href="../../index.html">Home</a>
+        </div>
+        <div>
+          <a href="../ContactUs/contactus.html">Contact Us</a>
+        </div>
+        <div>
+          <a href="../SignIn/signin.html"><img src="../../ASSETSGACHA/SIGN IN BUTTON-REVISED.png"></a>
+        </div>
+      </div>                        
+    </nav>
+    <div class="container">
+      <form id="registrationForm" action="user_registration.php" method="post">
+        <div class="form-group1">
+          <div> 
+            <label for="name">Name:</label>
+            <input type="name" id="name" name="name" required placeholder="E.g: Juan Dela Cruz">
+          </div>
+
+          <div> 
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="E.g: JuanDelaCruz123@gmail.com">
+          </div>
+          
+          <div>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" required>
+          </div>
+
+        </div>
+        <br>
+
+        <div class="register-btn">
+          <button type="submit">
+              REGISTER BUTTON
+          </button>
+      </div>
+      
+
+          <div class="add-btn">
+            <img src="../../ASSETSGACHA/ADD BUTTON REVISED.png"></a>
+          </div>
+        
+      </form>
+      
+    </div>
+
+
+  </body>
+  </html>
+    

@@ -1,0 +1,44 @@
+ .my-cart>h1 {
+    color: white;
+    font-family: Digital, sans-serif;
+    margin-left: 220px;
+    margin-top: -110px; 
+    font-size:50px; 
+}
+
+.my-cart > img {
+    margin-left: 40px;
+    margin-top:30px;
+}
+
+.shield1 {
+    display: inline-block; /* Display as inline-block */
+    margin-top:150px;
+    margin-left:150px;
+    position:relative;
+}
+  
+.shield1 a {
+    display: inline-block; /* Display as inline-block */
+    width: max-content; /* Set width to fit content (image size) */
+    height: max-content; /* Set height to fit content (image size) */
+}
+
+.shield1 > h1{
+    position:relative;
+    bottom:130px;
+    left:500px;
+    transform:translate(-50%,-50%);
+    color:white;
+    font-family:Digital, sans-serif;
+    font-size:50px;
+}
+
+.proceed-btn img {
+    margin-bottom:10rem;
+    margin-left:45rem;
+   transform: scale(2.5);
+}
+
+
+  
